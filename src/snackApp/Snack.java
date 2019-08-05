@@ -56,9 +56,8 @@ public class Snack {
 
     // Buy snack when given how many to buy
 
-    public int buySnack(int quantity) {
+    public void buySnack(int quantity) {
         this.quantity = this.quantity - quantity;
-        return totalCost(quantity);
     }
 
     // Get total cost given a quantity
