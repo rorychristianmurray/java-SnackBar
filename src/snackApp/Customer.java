@@ -6,18 +6,16 @@ public class Customer {
     private String name;
     private double cash;
 
-    public Customer(String name, double cash)
-    {
+    public Customer(String name, double cash) {
         maxId++;
         id = maxId;
         this.name = name;
-        this.cash = cash
-   
+        this.cash = cash;
+
     }
 
-    public void addCash(double add)
-    {
-        this.cash = this.cash + add
+    public void addCash(double add) {
+        this.cash = this.cash + add;
     }
 
     public String getName() {
@@ -34,8 +32,8 @@ public class Customer {
 
     // Buy given total cash used in purchase **Review this**
 
-    public void makePurchase(int quantity, Snack snack) {
-        this.cash = this.cash - snack.buySnack(quantity);
+    public void makePurchase(double cash) {
+        this.cash = this.cash - cash;
     }
 
 }
